@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional de Alexis David Cajamarca Largo - Estudiante de Ingeniería de Software y Desarrollador Full-Stack.">
+  <title>Alexis Cajamarca | Portafolio Profesional</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#inicio" class="logo">
+        <span class="logo-bracket">&lt;</span>AC<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Botón Menú Móvil -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Habilidades</a></li>
+          <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li class="nav-item"><a href="#design-system" class="nav-link">Design System</a></li>
+          <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botón Tema Claro/Oscuro -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema de color" title="Alternar tema">
+        <span class="theme-icon" id="themeIcon">☀️</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- SECCIÓN 1: INICIO / PRESENTACIÓN -->
+    <section class="hero section" id="inicio">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-greeting">Hola, mi nombre es</span>
+          <h1 class="hero-title">Alexis David Cajamarca Largo</h1>
+          <h2 class="hero-subtitle">Estudiante de Ingeniería de Software & Desarrollador Full-Stack</h2>
+          <p class="hero-description">
+            Enfocado en el desarrollo backend, diseño de arquitecturas web con Python/Django, integración de modelos de inteligencia artificial y optimización de software.
+          </p>
+          <div class="hero-actions">
+            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+            <a href="#contacto" class="btn btn-secondary">Contactar</a>
+          </div>
+        </div>
+        <figure class="hero-figure">
+          <div class="avatar-wrapper">
+            <img src="https://avatars.githubusercontent.com/u/cajamarcalargo" alt="Fotografía de Alexis David Cajamarca Largo" class="hero-avatar" width="280" height="280">
+          </div>
+          <figcaption class="visually-hidden">Foto de perfil de Alexis David Cajamarca Largo</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: SOBRE MÍ -->
+    <section class="about section" id="sobre-mi">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Sobre mí</h2>
+          <p class="section-subtitle">Trayectoria académica, enfoque y motivación profesional</p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-text card">
+            <h3>Perfil Profesional</h3>
+            <p>
+              Soy estudiante de Ingeniería de Software en la Universidad Estatal de Milagro (UNEMI). Me apasiona resolver problemas complejos mediante software eficiente, aplicando buenas prácticas de ingeniería, modularidad y metodologías ágiles.
+            </p>
+            <p>
+              Tengo experiencia práctica en el desarrollo de aplicaciones web con <strong>Django</strong>, bases de datos relacionales (<strong>PostgreSQL, MySQL</strong>) y despliegues contenerizados con <strong>Docker</strong>. Asimismo, me interesa la implementación de algoritmos metaheurísticos y modelos de aprendizaje profundo en entornos de producción.
+            </p>
+          </article>
+
+          <aside class="about-highlights">
+            <article class="highlight-card card">
+              <span class="highlight-number">UNEMI</span>
+              <h4 class="highlight-title">Formación Académica</h4>
+              <p>Facultad de Ciencias e Ingeniería — Carrera de Ingeniería de Software.</p>
+            </article>
+
+            <article class="highlight-card card">
+              <span class="highlight-number">Full-Stack</span>
+              <h4 class="highlight-title">Enfoque Técnico</h4>
+              <p>Desarrollo web centrado en APIs robustas, pipelines de datos y machine learning aplicado.</p>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: SKILLS -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Habilidades Técnicas</h2>
+          <p class="section-subtitle">Tecnologías, lenguajes y herramientas con las que construyo soluciones</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <article class="skill-category card">
+            <h3 class="skill-category-title">Backend & Lenguajes</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-level">Avanzado</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Django / DRF</span>
+                  <span class="skill-level">Intermedio - Avanzado</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Java / C#</span>
+                  <span class="skill-level">Intermedio</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="skill-category card">
+            <h3 class="skill-category-title">Bases de Datos & Cloud</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">PostgreSQL</span>
+                  <span class="skill-level">Intermedio - Avanzado</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-level">Intermedio</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Docker</span>
+                  <span class="skill-level">Intermedio</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="skill-category card">
+            <h3 class="skill-category-title">Frontend & Diseño Web</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5 Semántico</span>
+                  <span class="skill-level">Avanzado</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CSS3 / Flexbox / Grid</span>
+                  <span class="skill-level">Intermedio - Avanzado</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript (ES6+)</span>
+                  <span class="skill-level">Intermedio</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="skill-category card">
+            <h3 class="skill-category-title">IA, Algoritmos & Herramientas</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-level">Avanzado</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">TensorFlow / MobileNetV2</span>
+                  <span class="skill-level">Intermedio</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Metaheurísticas (Bat Algorithm)</span>
+                  <span class="skill-level">Intermedio</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
+              </li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: PROYECTOS DESTACADOS -->
+    <section class="projects section" id="proyectos">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Proyectos Destacados</h2>
+          <p class="section-subtitle">Soluciones de ingeniería desarrolladas con foco en rendimiento y utilidad real</p>
+        </div>
+
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="web">Web / Backend</button>
+          <button class="filter-btn" data-filter="ai">IA & Algoritmos</button>
+          <button class="filter-btn" data-filter="edu">Educación</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- Proyecto 1 -->
+          <article class="project-card card" data-category="web ai">
+            <figure class="project-figure">
+              <div class="project-image-placeholder">
+                <span>Inspección Estructural IA</span>
+              </div>
+              <figcaption class="visually-hidden">Captura de la plataforma de inspección estructural</figcaption>
+            </figure>
+            <div class="project-body">
+              <span class="project-tag">Web & Visión Artificial</span>
+              <h3 class="project-title">Sistema de Inspección de Defectos Estructurales</h3>
+              <p class="project-desc">
+                <strong>Problema:</strong> La evaluación manual de grietas y daños estructurales en edificaciones es lenta y propensa a fallas de consistencia.
+              </p>
+              <p class="project-desc">
+                <strong>Solución:</strong> Plataforma web que procesa imágenes mediante transfer learning (MobileNetV2) para clasificar daños y generar reportes técnicos centralizados.
+              </p>
+              <ul class="project-tech-list">
+                <li class="tech-badge">Django</li>
+                <li class="tech-badge">Python</li>
+                <li class="tech-badge">MobileNetV2</li>
+                <li class="tech-badge">PostgreSQL</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/cajamarcalargo" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver Repositorio</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="project-card card" data-category="ai">
+            <figure class="project-figure">
+              <div class="project-image-placeholder">
+                <span>VRP con Bat Algorithm</span>
+              </div>
+              <figcaption class="visually-hidden">Visualización de convergencia del Bat Algorithm para rutas</figcaption>
+            </figure>
+            <div class="project-body">
+              <span class="project-tag">Optimización Metaheurística</span>
+              <h3 class="project-title">Optimizador VRP con Ventanas de Tiempo (VRPTW)</h3>
+              <p class="project-desc">
+                <strong>Problema:</strong> Los altos costos logísticos y restricciones de horario en la distribución urbana de carga demandan rutas óptimas.
+              </p>
+              <p class="project-desc">
+                <strong>Solución:</strong> Modelo de optimización implementado en Python aplicando el algoritmo metaheurístico murciélago (Bat Algorithm) evaluado con benchmarks estándar.
+              </p>
+              <ul class="project-tech-list">
+                <li class="tech-badge">Python</li>
+                <li class="tech-badge">Bat Algorithm</li>
+                <li class="tech-badge">NumPy</li>
+                <li class="tech-badge">Matplotlib</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/cajamarcalargo" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver Repositorio</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="project-card card" data-category="edu">
+            <figure class="project-figure">
+              <div class="project-image-placeholder">
+                <span>Vinculación con la Sociedad</span>
+              </div>
+              <figcaption class="visually-hidden">Taller de lógica de programación para colegiales</figcaption>
+            </figure>
+            <div class="project-body">
+              <span class="project-tag">Vinculación / Impacto Social</span>
+              <h3 class="project-title">Taller de Lógica de Programación (Scratch & PSeInt)</h3>
+              <p class="project-desc">
+                <strong>Problema:</strong> Brecha temprana en pensamiento lógico-matemático en estudiantes de nivel secundario en la comunidad.
+              </p>
+              <p class="project-desc">
+                <strong>Solución:</strong> Metodología de enseñanza interactiva con Scratch y pseudocódigo. Reconocido en la Feria de Proyectos de Vinculación UNEMI.
+              </p>
+              <ul class="project-tech-list">
+                <li class="tech-badge">PSeInt</li>
+                <li class="tech-badge">Scratch</li>
+                <li class="tech-badge">Didáctica Tech</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/cajamarcalargo" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver Proyecto</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: DESIGN SYSTEM / COMPONENTES -->
+    <section class="design-system section" id="design-system">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Design System / Componentes</h2>
+          <p class="section-subtitle">Documentación viva de tokens de diseño y componentes reutilizables del portafolio</p>
+        </div>
+
+        <!-- 1. Paleta de Colores -->
+        <article class="ds-block card">
+          <h3 class="ds-subtitle">1. Paleta de Colores (Tokens)</h3>
+          <p class="ds-desc">Variables CSS asociadas a la paleta semántica del sitio.</p>
+          <div class="color-palette-grid">
+            <div class="color-swatch">
+              <div class="swatch-box" style="background-color: var(--color-primary);"></div>
+              <span class="swatch-name">Primary</span>
+              <code class="swatch-code">var(--color-primary)</code>
+            </div>
+            <div class="color-swatch">
+              <div class="swatch-box" style="background-color: var(--color-secondary);"></div>
+              <span class="swatch-name">Secondary</span>
+              <code class="swatch-code">var(--color-secondary)</code>
+            </div>
+            <div class="color-swatch">
+              <div class="swatch-box" style="background-color: var(--color-background); border: 1px solid var(--color-border);"></div>
+              <span class="swatch-name">Background</span>
+              <code class="swatch-code">var(--color-background)</code>
+            </div>
+            <div class="color-swatch">
+              <div class="swatch-box" style="background-color: var(--color-surface); border: 1px solid var(--color-border);"></div>
+              <span class="swatch-name">Surface (Card)</span>
+              <code class="swatch-code">var(--color-surface)</code>
+            </div>
+            <div class="color-swatch">
+              <div class="swatch-box" style="background-color: var(--color-text);"></div>
+              <span class="swatch-name">Text Primary</span>
+              <code class="swatch-code">var(--color-text)</code>
+            </div>
+            <div class="color-swatch">
+              <div class="swatch-box" style="background-color: var(--color-text-muted);"></div>
+              <span class="swatch-name">Text Muted</span>
+              <code class="swatch-code">var(--color-text-muted)</code>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Tipografía -->
+        <article class="ds-block card">
+          <h3 class="ds-subtitle">2. Jerarquía Tipográfica</h3>
+          <div class="typography-sample">
+            <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">Heading 1 (h1) — 2.5rem / 700</h1>
+            <h2 style="font-size: 1.6rem; margin-bottom: 0.5rem;">Heading 2 (h2) — 2rem / 600</h2>
+            <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Heading 3 (h3) — 1.5rem / 600</h3>
+            <p>Párrafo regular: Sistema modular usando escala tipográfica fluida con interletraje optimizado.</p>
+            <p class="text-muted">Texto secundario / Muted: Destinado a descripciones accesorias, fechas o subtítulos.</p>
+            <a href="#design-system">Enlace interactivo de ejemplo</a>
+          </div>
+        </article>
+
+        <!-- 3. Escala de Espaciados -->
+        <article class="ds-block card">
+          <h3 class="ds-subtitle">3. Escala de Espaciado (Spacing Scale)</h3>
+          <div class="spacing-scale-grid">
+            <div class="spacing-item">
+              <div class="spacing-visual" style="width: var(--space-xs); height: var(--space-xs);"></div>
+              <code>--space-xs: 0.25rem (4px)</code>
+            </div>
+            <div class="spacing-item">
+              <div class="spacing-visual" style="width: var(--space-sm); height: var(--space-sm);"></div>
+              <code>--space-sm: 0.5rem (8px)</code>
+            </div>
+            <div class="spacing-item">
+              <div class="spacing-visual" style="width: var(--space-md); height: var(--space-md);"></div>
+              <code>--space-md: 1rem (16px)</code>
+            </div>
+            <div class="spacing-item">
+              <div class="spacing-visual" style="width: var(--space-lg); height: var(--space-lg);"></div>
+              <code>--space-lg: 1.5rem (24px)</code>
+            </div>
+            <div class="spacing-item">
+              <div class="spacing-visual" style="width: var(--space-xl); height: var(--space-xl);"></div>
+              <code>--space-xl: 2.5rem (40px)</code>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Componentes Reutilizables -->
+        <article class="ds-block card">
+          <h3 class="ds-subtitle">4. Muestrario de Componentes UI</h3>
+          <div class="components-demo-grid">
+            <div class="component-demo">
+              <h4>Botones</h4>
+              <div class="demo-row">
+                <button class="btn btn-primary" type="button">Botón Primario</button>
+                <button class="btn btn-secondary" type="button">Botón Secundario</button>
+                <button class="btn btn-primary btn-sm" type="button">Botón Pequeño</button>
+              </div>
+            </div>
+
+            <div class="component-demo">
+              <h4>Badges / Tags</h4>
+              <div class="demo-row">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Django</span>
+                <span class="tech-badge">Docker</span>
+                <span class="project-tag">Tag Destacado</span>
+              </div>
+            </div>
+
+            <div class="component-demo">
+              <h4>Campos de Formulario</h4>
+              <div class="demo-form-preview">
+                <div class="form-group">
+                  <label for="demo-input" class="form-label">Input de texto regular</label>
+                  <input type="text" id="demo-input" class="form-input" placeholder="Ej. Roberto Gómez" readonly>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN 6: CONTACTO -->
+    <section class="contact section" id="contacto">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Contacto</h2>
+          <p class="section-subtitle">¿Tienes un proyecto, pasantía o colaboración en mente? Hablemos.</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <aside class="contact-info card">
+            <h3>Información Profesional</h3>
+            <p>Disponible para oportunidades de desarrollo de software, pasantías y colaboraciones técnicas.</p>
+            
+            <ul class="contact-links-list">
+              <li>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/cajamarcalargo" target="_blank" rel="noopener noreferrer">github.com/cajamarcalargo</a>
+              </li>
+              <li>
+                <strong>Ubicación:</strong>
+                <span>Guayas, Ecuador</span>
+              </li>
+              <li>
+                <strong>Disponibilidad:</strong>
+                <span>Remoto / Híbrido</span>
+              </li>
+            </ul>
+          </aside>
+
+          <form class="contact-form card" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Nombre completo *</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Ej. Roberto Gómez" required minlength="3">
+              <span class="form-error" id="nameError">El nombre debe tener al menos 3 caracteres.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Correo electrónico *</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="nombre@ejemplo.com" required>
+              <span class="form-error" id="emailError">Por favor ingresa un correo válido.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Asunto *</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="Propuesta de proyecto / colaboración" required minlength="4">
+              <span class="form-error" id="subjectError">El asunto debe tener al menos 4 caracteres.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Mensaje *</label>
+              <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Cuéntame sobre la propuesta..." required minlength="10"></textarea>
+              <span class="form-error" id="messageError">El mensaje debe tener al menos 10 caracteres.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Enviar Mensaje</button>
+            <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba" title="Volver al inicio">
+    ↑
+  </button>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Alexis David Cajamarca Largo. Desarrollado con HTML5 semántico, CSS3 propio y JavaScript.</p>
+      <div class="footer-links">
+        <a href="https://github.com/cajamarcalargo" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#inicio">Volver al inicio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
