@@ -43,7 +43,7 @@
           <li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
           <li class="nav-item"><a href="#skills" class="nav-link">Habilidades</a></li>
           <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
-          <li class="nav-item"><a href="#design-system" class="nav-link">Design System</a></li>
+          <li class="nav-item"><a href="design-system.html" class="nav-link">Design System</a></li>
           <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
         </ul>
       </nav>
@@ -349,124 +349,14 @@
     <!-- SECCIÓN 5: DESIGN SYSTEM / COMPONENTES -->
     <section class="design-system section" id="design-system">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Design System / Componentes</h2>
-          <p class="section-subtitle">Documentación viva de tokens de diseño y componentes reutilizables del portafolio</p>
+        <div class="card" style="text-align: center; padding: var(--space-xl) var(--space-lg);">
+          <span class="project-tag">Arquitectura Visual &amp; UI</span>
+          <h2 class="section-title" style="margin-bottom: var(--space-sm);">Design System / Componentes</h2>
+          <p class="section-subtitle" style="max-width: 650px; margin: 0 auto var(--space-lg) auto;">
+            Explora la guía de estilos viva del proyecto: paleta de colores cromática con valores HEX, escala de espaciados, tipografías y muestrario de componentes reutilizables.
+          </p>
+          <a href="design-system.html" class="btn btn-primary">Ver Design System Completo →</a>
         </div>
-
-        <!-- 1. Paleta de Colores -->
-        <article class="ds-block card">
-          <h3 class="ds-subtitle">1. Paleta de Colores (Tokens)</h3>
-          <p class="ds-desc">Variables CSS asociadas a la paleta semántica del sitio.</p>
-          <div class="color-palette-grid">
-            <div class="color-swatch">
-              <div class="swatch-box" style="background-color: var(--color-primary);"></div>
-              <span class="swatch-name">Primary</span>
-              <code class="swatch-code">var(--color-primary)</code>
-            </div>
-            <div class="color-swatch">
-              <div class="swatch-box" style="background-color: var(--color-secondary);"></div>
-              <span class="swatch-name">Secondary</span>
-              <code class="swatch-code">var(--color-secondary)</code>
-            </div>
-            <div class="color-swatch">
-              <div class="swatch-box" style="background-color: var(--color-background); border: 1px solid var(--color-border);"></div>
-              <span class="swatch-name">Background</span>
-              <code class="swatch-code">var(--color-background)</code>
-            </div>
-            <div class="color-swatch">
-              <div class="swatch-box" style="background-color: var(--color-surface); border: 1px solid var(--color-border);"></div>
-              <span class="swatch-name">Surface (Card)</span>
-              <code class="swatch-code">var(--color-surface)</code>
-            </div>
-            <div class="color-swatch">
-              <div class="swatch-box" style="background-color: var(--color-text);"></div>
-              <span class="swatch-name">Text Primary</span>
-              <code class="swatch-code">var(--color-text)</code>
-            </div>
-            <div class="color-swatch">
-              <div class="swatch-box" style="background-color: var(--color-text-muted);"></div>
-              <span class="swatch-name">Text Muted</span>
-              <code class="swatch-code">var(--color-text-muted)</code>
-            </div>
-          </div>
-        </article>
-
-        <!-- 2. Tipografía -->
-        <article class="ds-block card">
-          <h3 class="ds-subtitle">2. Jerarquía Tipográfica</h3>
-          <div class="typography-sample">
-            <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">Heading 1 (h1) — 2.5rem / 700</h1>
-            <h2 style="font-size: 1.6rem; margin-bottom: 0.5rem;">Heading 2 (h2) — 2rem / 600</h2>
-            <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Heading 3 (h3) — 1.5rem / 600</h3>
-            <p>Párrafo regular: Sistema modular usando escala tipográfica fluida con interletraje optimizado.</p>
-            <p class="text-muted">Texto secundario / Muted: Destinado a descripciones accesorias, fechas o subtítulos.</p>
-            <a href="#design-system">Enlace interactivo de ejemplo</a>
-          </div>
-        </article>
-
-        <!-- 3. Escala de Espaciados -->
-        <article class="ds-block card">
-          <h3 class="ds-subtitle">3. Escala de Espaciado (Spacing Scale)</h3>
-          <div class="spacing-scale-grid">
-            <div class="spacing-item">
-              <div class="spacing-visual" style="width: var(--space-xs); height: var(--space-xs);"></div>
-              <code>--space-xs: 0.25rem (4px)</code>
-            </div>
-            <div class="spacing-item">
-              <div class="spacing-visual" style="width: var(--space-sm); height: var(--space-sm);"></div>
-              <code>--space-sm: 0.5rem (8px)</code>
-            </div>
-            <div class="spacing-item">
-              <div class="spacing-visual" style="width: var(--space-md); height: var(--space-md);"></div>
-              <code>--space-md: 1rem (16px)</code>
-            </div>
-            <div class="spacing-item">
-              <div class="spacing-visual" style="width: var(--space-lg); height: var(--space-lg);"></div>
-              <code>--space-lg: 1.5rem (24px)</code>
-            </div>
-            <div class="spacing-item">
-              <div class="spacing-visual" style="width: var(--space-xl); height: var(--space-xl);"></div>
-              <code>--space-xl: 2.5rem (40px)</code>
-            </div>
-          </div>
-        </article>
-
-        <!-- 4. Componentes Reutilizables -->
-        <article class="ds-block card">
-          <h3 class="ds-subtitle">4. Muestrario de Componentes UI</h3>
-          <div class="components-demo-grid">
-            <div class="component-demo">
-              <h4>Botones</h4>
-              <div class="demo-row">
-                <button class="btn btn-primary" type="button">Botón Primario</button>
-                <button class="btn btn-secondary" type="button">Botón Secundario</button>
-                <button class="btn btn-primary btn-sm" type="button">Botón Pequeño</button>
-              </div>
-            </div>
-
-            <div class="component-demo">
-              <h4>Badges / Tags</h4>
-              <div class="demo-row">
-                <span class="tech-badge">Python</span>
-                <span class="tech-badge">Django</span>
-                <span class="tech-badge">Docker</span>
-                <span class="project-tag">Tag Destacado</span>
-              </div>
-            </div>
-
-            <div class="component-demo">
-              <h4>Campos de Formulario</h4>
-              <div class="demo-form-preview">
-                <div class="form-group">
-                  <label for="demo-input" class="form-label">Input de texto regular</label>
-                  <input type="text" id="demo-input" class="form-input" placeholder="Ej. Roberto Gómez" readonly>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
       </div>
     </section>
 

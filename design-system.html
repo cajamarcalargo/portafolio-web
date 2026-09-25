@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System & Componentes | Alexis Cajamarca</title>
+  <meta name="description" content="Documentación de tokens de diseño, tipografía y componentes UI reutilizables del portafolio.">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER ESPECÍFICO DEL DESIGN SYSTEM -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-bracket">&lt;</span>AC<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Botón Menú Móvil -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="index.html#sobre-mi" class="nav-link">Sobre mí</a></li>
+          <li class="nav-item"><a href="index.html#skills" class="nav-link">Habilidades</a></li>
+          <li class="nav-item"><a href="index.html#proyectos" class="nav-link">Proyectos</a></li>
+          <li class="nav-item"><a href="design-system.html" class="nav-link active" style="color: var(--color-primary); font-weight: 700;">Design System</a></li>
+          <li class="nav-item"><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Alternador de Tema -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema de color" title="Alternar tema">
+        <span class="theme-icon" id="themeIcon">☀️</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      
+      <!-- ENCABEZADO DE PÁGINA -->
+      <div class="section-header" style="text-align: left; margin-bottom: var(--space-xl);">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-md);">
+          <div>
+            <h1 class="section-title">Design System &amp; Componentes</h1>
+            <p class="section-subtitle">Documentación viva de tokens, escalas visuales y componentes modulares del portafolio.</p>
+          </div>
+          <a href="index.html" class="btn btn-secondary">← Volver al Portafolio</a>
+        </div>
+      </div>
+
+      <!-- 1. TOKENS DE COLOR -->
+      <article class="ds-block card">
+        <h2 class="ds-subtitle">1. Paleta de Colores (Tokens Semánticos)</h2>
+        <p class="ds-desc">Valores cromáticos en formato HEX y sus respectivas Custom Properties en CSS:</p>
+        <div class="color-palette-grid">
+          <div class="color-swatch">
+            <div class="swatch-box" style="background-color: var(--color-primary);"></div>
+            <span class="swatch-name">Primary</span>
+            <span class="swatch-hex">#3B82F6</span>
+            <code class="swatch-code">--color-primary</code>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-box" style="background-color: var(--color-secondary);"></div>
+            <span class="swatch-name">Secondary</span>
+            <span class="swatch-hex">#8B5CF6</span>
+            <code class="swatch-code">--color-secondary</code>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-box" style="background-color: var(--color-background); border: 1px solid var(--color-border);"></div>
+            <span class="swatch-name">Background</span>
+            <span class="swatch-hex">#0F172A</span>
+            <code class="swatch-code">--color-background</code>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-box" style="background-color: var(--color-surface); border: 1px solid var(--color-border);"></div>
+            <span class="swatch-name">Surface</span>
+            <span class="swatch-hex">#1E293B</span>
+            <code class="swatch-code">--color-surface</code>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-box" style="background-color: var(--color-text);"></div>
+            <span class="swatch-name">Text Primary</span>
+            <span class="swatch-hex">#F8FAFC</span>
+            <code class="swatch-code">--color-text</code>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-box" style="background-color: var(--color-text-muted);"></div>
+            <span class="swatch-name">Text Muted</span>
+            <span class="swatch-hex">#94A3B8</span>
+            <code class="swatch-code">--color-text-muted</code>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. JERARQUÍA TIPOGRÁFICA -->
+      <article class="ds-block card">
+        <h2 class="ds-subtitle">2. Jerarquía Tipográfica</h2>
+        <p class="ds-desc">Muestra real de los niveles de encabezados, enlaces y textos de cuerpo:</p>
+        <div class="typography-sample">
+          <h1 class="hero-title" style="font-size: 2.2rem; margin-bottom: var(--space-xs);">Heading 1 (h1) — Título Hero (Bold 700)</h1>
+          <h2 class="section-title" style="text-align: left; font-size: 1.7rem; margin-bottom: var(--space-xs);">Heading 2 (h2) — Títulos de Sección</h2>
+          <h3 class="project-title" style="font-size: 1.25rem; margin-bottom: var(--space-xs);">Heading 3 (h3) — Encabezado de Tarjetas y Categorías</h3>
+          <p><strong>Párrafo Regular (Body Text):</strong> Texto utilizado para descripciones, biografías y artículos técnicos con interlineado fluido (1.6).</p>
+          <p class="section-subtitle" style="text-align: left; margin: 0;"><strong>Texto Secundario (Text Muted):</strong> Para notas aclaratorias, subtítulos y metadatos.</p>
+          <div>
+            <a href="#" class="nav-link" style="display: inline-block; padding: 0;">Enlace interactivo de ejemplo (Hover &amp; Focus activo)</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. ESCALA DE ESPACIADOS -->
+      <article class="ds-block card">
+        <h2 class="ds-subtitle">3. Escala de Espaciados (Spacing Scale)</h2>
+        <p class="ds-desc">Valores proporcionales empleados en padding, margin y gaps:</p>
+        <div class="spacing-scale-grid">
+          <div class="spacing-item">
+            <div class="spacing-visual" style="width: var(--space-xs); height: var(--space-xs);"></div>
+            <code>--space-xs: 0.25rem (4px)</code>
+          </div>
+          <div class="spacing-item">
+            <div class="spacing-visual" style="width: var(--space-sm); height: var(--space-sm);"></div>
+            <code>--space-sm: 0.5rem (8px)</code>
+          </div>
+          <div class="spacing-item">
+            <div class="spacing-visual" style="width: var(--space-md); height: var(--space-md);"></div>
+            <code>--space-md: 1rem (16px)</code>
+          </div>
+          <div class="spacing-item">
+            <div class="spacing-visual" style="width: var(--space-lg); height: var(--space-lg);"></div>
+            <code>--space-lg: 1.5rem (24px)</code>
+          </div>
+          <div class="spacing-item">
+            <div class="spacing-visual" style="width: var(--space-xl); height: var(--space-xl);"></div>
+            <code>--space-xl: 2.5rem (40px)</code>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. COMPONENTES UI REUTILIZABLES -->
+      <article class="ds-block card">
+        <h2 class="ds-subtitle">4. Muestrario de Componentes UI Reutilizables</h2>
+        <p class="ds-desc">Muestra aislada de todos los elementos funcionales presentes en la interfaz:</p>
+        <div class="components-demo-grid">
+          
+          <!-- Componente: Navbar -->
+          <div class="component-demo">
+            <h3>Navbar (Barra de Navegación)</h3>
+            <div class="header-container" style="border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 0 var(--space-md); background: var(--color-surface); height: 56px;">
+              <span class="logo"><span class="logo-bracket">&lt;</span>AC<span class="logo-bracket">/&gt;</span></span>
+              <div style="display: flex; gap: var(--space-sm);">
+                <span class="nav-link" style="color: var(--color-primary);">Inicio</span>
+                <span class="nav-link">Habilidades</span>
+                <span class="nav-link">Contacto</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Componente: Botones -->
+          <div class="component-demo">
+            <h3>Botones (Buttons)</h3>
+            <div class="demo-row">
+              <button class="btn btn-primary" type="button">Botón Primario</button>
+              <button class="btn btn-secondary" type="button">Botón Secundario</button>
+              <button class="btn btn-primary btn-sm" type="button">Botón Pequeño</button>
+            </div>
+          </div>
+
+          <!-- Componente: Badges y Tags -->
+          <div class="component-demo">
+            <h3>Badges y Etiquetas</h3>
+            <div class="demo-row">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Django</span>
+              <span class="tech-badge">Docker</span>
+              <span class="project-tag" style="margin: 0;">Tag de Categoría</span>
+            </div>
+          </div>
+
+          <!-- Componente: Inputs y Textarea -->
+          <div class="component-demo">
+            <h3>Campos de Entrada (Inputs &amp; Textarea)</h3>
+            <div class="demo-form-preview">
+              <div class="form-group">
+                <label for="ds-input-demo" class="form-label">Input de texto</label>
+                <input type="text" id="ds-input-demo" class="form-input" placeholder="Ej. Roberto Gómez" readonly>
+              </div>
+              <div class="form-group">
+                <label for="ds-textarea-demo" class="form-label">Área de texto (Textarea)</label>
+                <textarea id="ds-textarea-demo" class="form-textarea" rows="2" placeholder="Ejemplo de mensaje o consulta..." readonly></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Componente: Card de Proyecto Modelo -->
+          <div class="component-demo">
+            <h3>Card de Proyecto (Modelo Estructural)</h3>
+            <article class="project-card card" style="max-width: 400px;">
+              <figure class="project-figure" style="height: 120px;">
+                <span style="color: var(--color-text-muted); font-size: 0.9rem;">Área de Imagen / Preview</span>
+              </figure>
+              <div class="project-body" style="padding: var(--space-md);">
+                <span class="project-tag">Categoría de Proyecto</span>
+                <h4 class="project-title" style="font-size: 1.1rem; margin-bottom: var(--space-xs);">Nombre del Proyecto</h4>
+                <p class="project-desc" style="font-size: 0.85rem; margin-bottom: var(--space-xs);">
+                  Tarjeta contenedora modular con bordes adaptables y elevación.
+                </p>
+                <div class="project-tech-list" style="margin: var(--space-xs) 0;">
+                  <span class="tech-badge">HTML5</span>
+                  <span class="tech-badge">CSS3</span>
+                </div>
+                <button class="btn btn-secondary btn-sm" type="button" style="width: fit-content;">Ver Repositorio</button>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Alexis David Cajamarca Largo. Design System Documentado.</p>
+      <div class="footer-links">
+        <a href="index.html">Volver al Portafolio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -271,9 +271,6 @@ img {
 /* ==========================================================================
    SECCIÓN 1: HERO
    ========================================================================== */
-/* ==========================================================================
-   SECCIÓN 1: HERO
-   ========================================================================== */
 .hero-container {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -573,7 +570,13 @@ img {
   font-size: 0.85rem;
   font-weight: 600;
 }
-
+.swatch-hex {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-primary);
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
 .swatch-code {
   font-size: 0.75rem;
   color: var(--color-text-muted);
