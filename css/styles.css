@@ -402,11 +402,15 @@ section[id] {
 }
 
 .skill-category-title {
-  font-size: 1.2rem;
-  margin-bottom: var(--space-md);
+  font-size: 1.15rem;
   color: var(--color-text);
   border-bottom: 2px solid var(--color-border);
   padding-bottom: var(--space-xs);
+  margin-bottom: var(--space-md);
+  /* Altura fija para que todos los títulos queden nivelados */
+  min-height: 2.8rem;
+  display: flex;
+  align-items: center;
 }
 
 .skill-list {
@@ -418,13 +422,23 @@ section[id] {
 .skill-info {
   display: flex;
   justify-content: space-between;
-  font-size: 0.9rem;
+  align-items: flex-end; /* Alinea los textos por su base */
+  font-size: 0.88rem;
   margin-bottom: var(--space-xs);
+  /* Altura fija para que si un texto hace salto de línea, no desalinee los demás */
+  min-height: 2.4rem;
+}
+
+.skill-info span:first-child {
+  font-weight: 500;
+  padding-right: var(--space-xs);
 }
 
 .skill-level {
   color: var(--color-text-muted);
   font-size: 0.8rem;
+  white-space: nowrap; /* Evita que el nivel se corte a la mitad */
+  text-align: right;
 }
 
 .skill-bar {
