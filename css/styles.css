@@ -507,7 +507,29 @@ section[id] {
   justify-content: center;
   border-bottom: 1px solid var(--color-border);
 }
+/* Slider automático para tarjetas con múltiples imágenes */
+.project-slider {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
 
+.project-slider .project-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+/* La imagen activa se muestra con opacidad completa */
+.project-slider .project-img.active {
+  opacity: 1;
+}
 .project-image-placeholder {
   font-weight: 600;
   color: var(--color-text-muted);
