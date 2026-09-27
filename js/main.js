@@ -173,3 +173,21 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+// --------------------------------------------------------------------------
+  // 6. ALTERNANCIA AUTOMÁTICA DE IMÁGENES EN PROYECTOS (SLIDER)
+  // --------------------------------------------------------------------------
+  const sliders = document.querySelectorAll('.project-slider');
+
+  sliders.forEach(slider => {
+    const images = slider.querySelectorAll('.project-img');
+    if (images.length > 1) {
+      let currentIndex = 0;
+      const intervalTime = 3500; // Cambia cada 3.5 segundos
+
+      setInterval(() => {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+      }, intervalTime);
+    }
+  });
