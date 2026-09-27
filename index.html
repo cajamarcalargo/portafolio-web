@@ -117,7 +117,6 @@
     </section>
 
     <!-- SECCIÓN 3: SKILLS -->
-<!-- SECCIÓN 3: HABILIDADES TÉCNICAS -->
     <section class="skills section" id="skills">
       <div class="container">
         <div class="section-header">
@@ -292,16 +291,19 @@
 
         <div class="projects-grid" id="projectsGrid">
 
-          <!-- Proyecto 1 -->
+         <!-- Proyecto 1 -->
           <article class="project-card card" data-category="web ai">
             <figure class="project-figure">
-              <div class="project-image-placeholder">
-                <span>Inspección Estructural IA</span>
-              </div>
+              <img 
+                src="/assets/img/cnn.png" 
+                alt="Captura de pantalla de la plataforma de inspección de defectos estructurales" 
+                class="project-img" 
+                loading="lazy"
+              >
               <figcaption class="visually-hidden">Captura de la plataforma de inspección estructural</figcaption>
             </figure>
             <div class="project-body">
-              <span class="project-tag">Web & Visión Artificial</span>
+              <span class="project-tag">Web &amp; Visión Artificial</span>
               <h3 class="project-title">Sistema de Inspección de Defectos Estructurales</h3>
               <p class="project-desc">
                 <strong>Problema:</strong> La evaluación manual de grietas y daños estructurales en edificaciones es lenta y propensa a fallas de consistencia.
@@ -316,33 +318,45 @@
                 <li class="tech-badge">PostgreSQL</li>
               </ul>
               <div class="project-links">
-                <a href="https://github.com/cajamarcalargo" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver Repositorio</a>
+                <a href="https://github.com/jeandaly20/Deteccion-de-da-os-Estructurales" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver Repositorio</a>
+                <a href="https://deteccion-de-da-os-estructurales.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Demo</a>
+
               </div>
             </div>
           </article>
 
           <!-- Proyecto 2 -->
-          <article class="project-card card" data-category="ai">
-            <figure class="project-figure">
-              <div class="project-image-placeholder">
-                <span>VRP con Bat Algorithm</span>
-              </div>
-              <figcaption class="visually-hidden">Visualización de convergencia del Bat Algorithm para rutas</figcaption>
+          <article class="project-card card" data-category="desktop">
+            <figure class="project-figure project-slider">
+              <img 
+                src="./assets/img/grapes1.jpeg" 
+                alt="Captura de jugabilidad en The Grapes - Vista 1" 
+                class="project-img active" 
+                loading="lazy"
+              >
+              <img 
+                src="./assets/img/grape2.jpeg" 
+                alt="Captura de combate y mecánicas en The Grapes - Vista 2" 
+                class="project-img" 
+                loading="lazy"
+              >
+              <figcaption class="visually-hidden">Capturas de pantalla del videojuego The Grapes</figcaption>
             </figure>
+
             <div class="project-body">
-              <span class="project-tag">Optimización Metaheurística</span>
-              <h3 class="project-title">Optimizador VRP con Ventanas de Tiempo (VRPTW)</h3>
+              <span class="project-tag">Videojuegos / Escritorio</span>
+              <h3 class="project-title">The Grapes</h3>
               <p class="project-desc">
-                <strong>Problema:</strong> Los altos costos logísticos y restricciones de horario en la distribución urbana de carga demandan rutas óptimas.
+                <strong>Problema:</strong> Desarrollar una experiencia de juego 2D fluida implementando bucles de renderizado, detección de colisiones y máquinas de estado para enemigos y mecánicas de combate sin sobrecargar el rendimiento en escritorio.
               </p>
               <p class="project-desc">
-                <strong>Solución:</strong> Modelo de optimización implementado en Python aplicando el algoritmo metaheurístico murciélago (Bat Algorithm) evaluado con benchmarks estándar.
+                <strong>Solución:</strong> Videojuego de acción y rol (RPG) programado en Java con mecánicas de combate cuerpo a cuerpo y a distancia, sistema de parry, recolección de ítems, gestión de estados de salud y efectos sonoros espaciales integrados.
               </p>
               <ul class="project-tech-list">
-                <li class="tech-badge">Python</li>
-                <li class="tech-badge">Bat Algorithm</li>
-                <li class="tech-badge">NumPy</li>
-                <li class="tech-badge">Matplotlib</li>
+                <li class="tech-badge">Java</li>
+                <li class="tech-badge">POO / Game Loop</li>
+                <li class="tech-badge">Renderizado 2D</li>
+                <li class="tech-badge">Lógica Algorítmica</li>
               </ul>
               <div class="project-links">
                 <a href="https://github.com/cajamarcalargo" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver Repositorio</a>
