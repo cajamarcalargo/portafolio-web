@@ -59,33 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --------------------------------------------------------------------------
-  // 3. FILTRADO DINÁMICO DE PROYECTOS POR CATEGORÍA
-  // --------------------------------------------------------------------------
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.project-card');
-
-  if (filterButtons.length > 0 && projectCards.length > 0) {
-    filterButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-
-        const filterValue = button.getAttribute('data-filter');
-
-        projectCards.forEach(card => {
-          const categories = card.getAttribute('data-category') || '';
-          if (filterValue === 'all' || categories.includes(filterValue)) {
-            card.style.display = 'flex';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      });
-    });
-  }
-
-  // --------------------------------------------------------------------------
-  // 4. BOTÓN FLOTANTE "VOLVER ARRIBA"
+  // 3. BOTÓN FLOTANTE "VOLVER ARRIBA"
   // --------------------------------------------------------------------------
   const backToTopBtn = document.getElementById('backToTop');
 
@@ -107,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --------------------------------------------------------------------------
-  // 5. VALIDACIÓN DEL FORMULARIO DE CONTACTO EN TIEMPO REAL
+  // 4. VALIDACIÓN DEL FORMULARIO DE CONTACTO EN TIEMPO REAL
   // --------------------------------------------------------------------------
   const contactForm = document.getElementById('contactForm');
 
@@ -174,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 // --------------------------------------------------------------------------
-  // 6. ALTERNANCIA AUTOMÁTICA DE IMÁGENES EN PROYECTOS (SLIDER)
+  // 5. ALTERNANCIA AUTOMÁTICA DE IMÁGENES EN PROYECTOS (SLIDER)
   // --------------------------------------------------------------------------
   const sliders = document.querySelectorAll('.project-slider');
 
