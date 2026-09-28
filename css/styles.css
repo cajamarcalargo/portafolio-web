@@ -384,6 +384,9 @@ section[id] {
     width: 280px;
     height: 370px;
   }
+  .hero-avatar {
+    object-position: center 15%; /* Evita completamente el corte de cabello en móvil */
+  }
 }
 
 /* ==========================================================================
